@@ -1,7 +1,7 @@
 <!-- BANNER -->
 ![banner](https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=180&section=header&text=Paulo%20Ramos&fontSize=36&fontColor=ffffff&animation=fadeIn)
 
-# 👋 Olá, eu sou o Paulo Ramos!
+# 👋 Olá, eu sou o Paulo Ramos de Oliveira!
 
 🎓 **Estudante de Sistemas de Informação — Faculdade Estácio**  
 💻 **Desenvolvedor em formação | Tecnologia | Programação | Dados**  
