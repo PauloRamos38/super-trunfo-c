@@ -52,16 +52,6 @@ Sou estudante de **Sistemas de Informação** pela **Faculdade Estácio**, atual
 
 👉 Explore meus repositórios abaixo ⬇️
 
----
-
-## 📊 Estatísticas do GitHub
-
-![Paulo GitHub Stats](https://github-readme-stats.vercel.app/api?username=pauloramos38&show_icons=true&theme=tokyonight)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=pauloramos38&layout=compact&theme=tokyonight)
-
----
-
 ## 👥 Visitantes no perfil
 
 ![Visitor Count](https://komarev.com/ghpvc/?username=pauloramos38&color=blueviolet&style=for-the-badge)
