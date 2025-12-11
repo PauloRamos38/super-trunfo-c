@@ -1,10 +1,14 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
 
     // ==============================
-    // DECLARACAO DOS DADOS DA CARTA 1
+    // NÍVEL NOVATO
+    // Cadastro das cartas
     // ==============================
+
+    // CARTA 1
     char estado1[3];
     char codigo1[5];
     char cidade1[50];
@@ -13,9 +17,7 @@ int main() {
     float pib1;
     int pontos1;
 
-    // ==============================
-    // DECLARACAO DOS DADOS DA CARTA 2
-    // ==============================
+    // CARTA 2
     char estado2[3];
     char codigo2[5];
     char cidade2[50];
@@ -24,9 +26,7 @@ int main() {
     float pib2;
     int pontos2;
 
-    // ==============================
-    // LEITURA DOS DADOS DA CARTA 1
-    // ==============================
+    // -------- Leitura Carta 1 --------
     printf("=== Cadastro da Carta 1 ===\n");
 
     printf("Estado (ex: PE): ");
@@ -36,7 +36,7 @@ int main() {
     scanf("%s", codigo1);
 
     printf("Nome da cidade: ");
-    scanf(" %[^\n]", cidade1); // Lê texto com espaços
+    scanf(" %[^\n]", cidade1);
 
     printf("Populacao: ");
     scanf("%d", &populacao1);
@@ -50,9 +50,7 @@ int main() {
     printf("Pontos turisticos: ");
     scanf("%d", &pontos1);
 
-    // ==============================
-    // LEITURA DOS DADOS DA CARTA 2
-    // ==============================
+    // -------- Leitura Carta 2 --------
     printf("\n=== Cadastro da Carta 2 ===\n");
 
     printf("Estado (ex: BA): ");
@@ -77,54 +75,105 @@ int main() {
     scanf("%d", &pontos2);
 
     // ==============================
-    // CALCULO DA DENSIDADE POPULACIONAL
-    // Formula: populacao / area
+    // NÍVEL AVENTUREIRO
+    // APENAS CÁLCULOS (SEM IF / ELSE)
     // ==============================
+
     float densidade1 = (float) populacao1 / area1;
     float densidade2 = (float) populacao2 / area2;
 
-    // ==============================
-    // CALCULO DO PIB PER CAPITA
-    // Formula: pib / populacao
-    // ==============================
     float pibPerCapita1 = pib1 / (float) populacao1;
     float pibPerCapita2 = pib2 / (float) populacao2;
 
-    // ==============================
-    // COMPARACAO FIXA NO CODIGO
-    // ATRIBUTO: DENSIDADE POPULACIONAL
-    // REGRA: MENOR DENSIDADE VENCE
-    // ==============================
-    printf("\nComparacao de Cartas (Atributo: Densidade Populacional)\n\n");
+    // -------- Exibição --------
+    printf("\n=== Dados Calculados ===\n");
 
-    printf("Carta 1 - %s (%s): %.2f\n", cidade1, estado1, densidade1);
-    printf("Carta 2 - %s (%s): %.2f\n\n", cidade2, estado2, densidade2);
+    printf("\nCarta 1 - %s\n", cidade1);
+    printf("Densidade Populacional: %.2f hab/km2\n", densidade1);
+    printf("PIB per Capita: %.2f reais\n", pibPerCapita1);
 
+    printf("\nCarta 2 - %s\n", cidade2);
+    printf("Densidade Populacional: %.2f hab/km2\n", densidade2);
+    printf("PIB per Capita: %.2f reais\n", pibPerCapita2);
+        // ==============================
+    // NÍVEL MESTRE
+    // Comparação de cartas
     // ==============================
-    // ESTRUTURA IF / ELSE
-    // ==============================
-    if (densidade1 < densidade2) {
-        printf("Resultado: Carta 1 (%s) venceu!\n", cidade1);
+
+    int opcao;
+    int vencedor; // 1 = Carta 1 | 2 = Carta 2 | 0 = Empate
+
+    printf("\n=== NIVEL MESTRE ===\n");
+    printf("Escolha o atributo para comparacao:\n");
+    printf("1 - Populacao (maior vence)\n");
+    printf("2 - Area (maior vence)\n");
+    printf("3 - PIB (maior vence)\n");
+    printf("4 - Densidade Populacional (menor vence)\n");
+    printf("5 - PIB per Capita (maior vence)\n");
+    printf("Opcao: ");
+    scanf("%d", &opcao);
+
+    switch (opcao) {
+
+        case 1: // População
+            if (populacao1 > populacao2)
+                vencedor = 1;
+            else if (populacao2 > populacao1)
+                vencedor = 2;
+            else
+                vencedor = 0;
+            break;
+
+        case 2: // Área
+            if (area1 > area2)
+                vencedor = 1;
+            else if (area2 > area1)
+                vencedor = 2;
+            else
+                vencedor = 0;
+            break;
+
+        case 3: // PIB
+            if (pib1 > pib2)
+                vencedor = 1;
+            else if (pib2 > pib1)
+                vencedor = 2;
+            else
+                vencedor = 0;
+            break;
+
+        case 4: // Densidade (MENOR vence)
+            vencedor = (densidade1 < densidade2) ? 1 :
+                       (densidade2 < densidade1) ? 2 : 0;
+            break;
+
+        case 5: // PIB per capita
+            vencedor = (pibPerCapita1 > pibPerCapita2) ? 1 :
+                       (pibPerCapita2 > pibPerCapita1) ? 2 : 0;
+            break;
+
+        default:
+            printf("Opcao invalida.\n");
+            return 0;
     }
-    else if (densidade2 < densidade1) {
-        printf("Resultado: Carta 2 (%s) venceu!\n", cidade2);
+
+    // ==============================
+    // RESULTADO FINAL
+    // ==============================
+
+    printf("\n=== RESULTADO ===\n");
+
+    if (vencedor == 1) {
+        printf("Carta vencedora: %s (%s)\n", cidade1, estado1);
+    }
+    else if (vencedor == 2) {
+        printf("Carta vencedora: %s (%s)\n", cidade2, estado2);
     }
     else {
         printf("Resultado: Empate!\n");
     }
 
-    // ==============================
-    // EXIBICAO DOS CALCULOS EXTRAS
-    // ==============================
-    printf("\n--- Calculos Extras ---\n");
 
-    printf("\n%s:\n", cidade1);
-    printf("Densidade: %.2f\n", densidade1);
-    printf("PIB per capita: %.4f\n", pibPerCapita1);
-
-    printf("\n%s:\n", cidade2);
-    printf("Densidade: %.2f\n", densidade2);
-    printf("PIB per capita: %.4f\n", pibPerCapita2);
-
-    return 0;
+    return 0; 
+    
 }

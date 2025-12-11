@@ -1,0 +1,24 @@
+# Binários e executáveis
+bin/
+super_trunfo
+supertrunfo
+super_trunfo_debug
+
+# Arquivos de objeto
+*.o
+*.obj
+*.out
+
+# IDEs e editores
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+bin/
+super_trunfo
+supertrunfo

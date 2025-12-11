@@ -1,0 +1,8 @@
+{
+  "files.exclude": {
+    "**/super_trunfo": true,
+    "**/supertrunfo": true,
+    "**/super_trunfo_debug": true,
+    "**/bin": false
+  }
+}
