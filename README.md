@@ -24,7 +24,7 @@ Sou estudante de **Sistemas de Informação** pela **Faculdade Estácio**, atual
 
 ## 🧠 Tecnologias que estudo
 
-![C++](https://img.shields.io/badge/C++-blue?style=for-the-badge&logo=cplusplus)
+![C](https://img.shields.io/badge/C++-blue?style=for-the-badge&logo=cplusplus)
 ![Python](https://img.shields.io/badge/Python-yellow?style=for-the-badge&logo=python)
 ![JavaScript](https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=javascript)
 ![Java](https://img.shields.io/badge/Java-red?style=for-the-badge&logo=java)
