@@ -45,7 +45,7 @@ Sou estudante de **Sistemas de Informação** pela **Faculdade Estácio**, atual
 
 📌 Meus projetos estão organizados por área:
 - ✅ Lógica de Programação
-- ✅ Projetos em C++
+- ✅ Projetos em C
 - ✅ Projetos em Python
 - ✅ Projetos Web (HTML, CSS, JavaScript)
 - ✅ Estudos de Dados
