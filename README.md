@@ -1,67 +1,211 @@
-<!-- BANNER -->
-![banner](https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=180&section=header&text=Paulo%20Ramos%20de%20Oliveira&fontSize=34&fontColor=ffffff&animation=fadeIn)
+🃏 Super Trunfo – Cadastro e Comparação de Cartas (Linguagem C)
 
-# 👨‍💻 Paulo Ramos de Oliveira
+Este projeto foi desenvolvido em linguagem C e simula um jogo de Super Trunfo, onde duas cartas representam cidades brasileiras.
+O programa permite cadastrar dados, realizar cálculos estatísticos e comparar cartas com base em diferentes atributos.
 
-🎓 **Estudante de Sistemas de Informação — Faculdade Estácio**  
-💻 **Desenvolvedor em formação | Programação | Tecnologia | Dados**  
-🚀 Em constante evolução na área de **Desenvolvimento de Software**
+📌 Objetivo do Projeto
 
----
+Praticar entrada e saída de dados em C
 
-## 📚 Sobre mim
+Trabalhar com variáveis, tipos primitivos e strings
 
-Sou estudante de **Sistemas de Informação** pela **Faculdade Estácio**, atualmente em fase de fortalecimento da base em **programação**, com foco em desenvolvimento de software e projetos práticos. Estou em transição definitiva de carreira para a área de tecnologia.
+Realizar cálculos matemáticos
 
-✅ Experiência anterior em:
-- Educação (Professor)
-- Tradução Freelancer
-- Segurança Patrimonial
-- Marketing Digital Orgânico
-- Vendas
+Utilizar estruturas de decisão (if, switch)
 
----
+Organizar o código por níveis de dificuldade
 
-## 🧠 Tecnologias que estudo
+🧱 Estrutura do Programa
 
-![C](https://img.shields.io/badge/C-blue?style=for-the-badge&logo=cplusplus)
-![Python](https://img.shields.io/badge/Python-yellow?style=for-the-badge&logo=python)
-![JavaScript](https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=javascript)
-![Java](https://img.shields.io/badge/Java-red?style=for-the-badge&logo=java)
-![Git](https://img.shields.io/badge/Git-orange?style=for-the-badge&logo=git)
-![GitHub](https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github)
+O código está dividido em três níveis:
 
----
+🟢 Nível Novato – Cadastro das Cartas
 
-## 🏫 Formação Acadêmica
+Neste nível, o usuário informa os dados de duas cartas, contendo:
 
-🎓 **Sistemas de Informação**  
-📍 Faculdade Estácio  
-📆 Início: 2025 – Em andamento
+Estado (UF)
 
----
+Código da carta
 
-## 🛠️ Projetos
+Nome da cidade
 
-📌 Meus projetos estão organizados por área:
-- ✅ Lógica de Programação
-- ✅ Projetos em C
-- ✅ Projetos em Python
-- ✅ Projetos Web (HTML, CSS, JavaScript)
-- ✅ Estudos de Dados
+População
 
-👉 Explore meus repositórios abaixo ⬇️
+Área (km²)
 
-## 👥 Visitantes no perfil
+PIB
 
-![Visitor Count](https://komarev.com/ghpvc/?username=pauloramos38&color=blueviolet&style=for-the-badge)
+Número de pontos turísticos
 
----
+🟡 Nível Aventureiro – Cálculos Automáticos
 
-## 🌐 Onde me encontrar
+Após o cadastro, o programa calcula automaticamente:
 
-🔗 GitHub: https://github.com/pauloramos38  
+Densidade populacional
 
----
+𝑑
+𝑒
+𝑛
+𝑠
+𝑖
+𝑑
+𝑎
+𝑑
+𝑒
+=
+𝑝
+𝑜
+𝑝
+𝑢
+𝑙
+𝑎
+𝑐
+\c
+𝑎
+~
+𝑜
+/
+𝑎
+ˊ
+𝑟
+𝑒
+𝑎
+densidade=popula
+c
+\c
+	​
 
-🔥 *Perfil em constante crescimento, acompanhando minha evolução na tecnologia.*
+a
+~
+o/
+a
+ˊ
+rea
+
+PIB per capita
+
+𝑝
+𝑖
+𝑏
+ 
+𝑝
+𝑒
+𝑟
+ 
+𝑐
+𝑎
+𝑝
+𝑖
+𝑡
+𝑎
+=
+𝑝
+𝑖
+𝑏
+/
+𝑝
+𝑜
+𝑝
+𝑢
+𝑙
+𝑎
+𝑐
+\c
+𝑎
+~
+𝑜
+pib per capita=pib/popula
+c
+\c
+	​
+
+a
+~
+o
+
+⚠️ Neste nível não são utilizados if ou else, apenas cálculos diretos.
+
+🔴 Nível Mestre – Comparação das Cartas
+
+O usuário escolhe um atributo para comparar as cartas:
+
+População (maior vence)
+
+Área (maior vence)
+
+PIB (maior vence)
+
+Densidade populacional (menor vence)
+
+PIB per capita (maior vence)
+
+O programa determina automaticamente:
+
+Carta 1 vencedora
+
+Carta 2 vencedora
+
+ou Empate
+
+🖥️ Como Compilar e Executar
+✅ Pré-requisitos
+
+Compilador C (ex: GCC)
+
+Terminal ou Prompt de Comando
+
+▶️ Compilação
+gcc super_trunfo.c -o super_trunfo
+
+▶️ Execução
+./super_trunfo
+
+
+(No Windows, use super_trunfo.exe)
+
+📥 Exemplo de Entrada
+Estado (ex: PE): PE
+Codigo da carta (ex: A01): A01
+Nome da cidade: Recife
+Populacao: 1600000
+Area (km2): 218.4
+PIB: 60000000
+Pontos turisticos: 15
+
+📤 Exemplo de Saída
+=== Dados Calculados ===
+
+Carta 1 - Recife
+Densidade Populacional: 7325.23 hab/km2
+PIB per Capita: 37.50 reais
+
+📚 Conceitos Utilizados
+
+scanf e printf
+
+Vetores de char (strings)
+
+Operadores aritméticos
+
+if / else
+
+switch case
+
+Operador ternário ?:
+
+🚀 Possíveis Melhorias Futuras
+
+Uso de struct para representar cartas
+
+Validação de entradas do usuário
+
+Cadastro de mais de duas cartas
+
+Interface gráfica ou menu interativo
+
+Salvamento de dados em arquivo
+
+👨‍💻 Autor
+
+Paulo Ramos de Oliveira
+Projeto acadêmico desenvolvido para fins de aprendizado em Linguagem C.
